@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box
+}
+
+nav {
+    text-align: center;
+
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+#home {
+    background-color: #101820FF;
+    color: #FEE715FF;
+}
+
+#news {
+    background-color: #FEE715FF;
+    color: #101820FF;
+}
+
+.subhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabcontent {
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.tabcontent #news {
+    height: 500px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* to center */
+.btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabcontent .button {
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.tabcontent .button:hover {
+    cursor: pointer;
+    background-color: #FEE715FF;
+    color: black !important;
+    border-radius: 50px;
+    border-color: coral !important;
+    transition: all 0.6s ease 0s;
+}
+
+.tablink {
+    background-color: #a49987;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+#home-tablink {
+    color: #FEE715FF;
+}
+
+#news-tablink {
+    color: #101820FF;
+}
+
+#home-tablink:hover {
+    background-color: #101820FF;
+}
+
+#news-tablink:hover {
+    background-color: #FEE715FF;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.user-news-dashboard {
+    text-align: center;
+    border: 3px;
+}
+
+.user-news-dashboard li {
+    /* padding-top: 0.08%; */
+    padding-bottom: 0.2%;
+}
+
+.user-news-dashboard li a:link {
+    color: white;
+}
+
+.user-news-dashboard li a:visited {
+    color: grey;
+}
+
+.user-news-dashboard li a:hover {
+    /* color: #FEE715FF; */
+    color: coral;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 175px 175px 175px 175px;
+    grid-gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-card {
+    background-color: #101820FF;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 59px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: small;
+    margin-bottom: 1%;
+}
+
+.news-container a:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .news-container {
+        display: grid;
+        grid-template-columns: 174px 174px 174px;
+        grid-gap: 22.5px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .news-container {
+        display: grid;
+        grid-template-columns: 173px 173px;
+        grid-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .news-container {
+        display: grid;
+        grid-template-columns: 170px;
+        grid-gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+}

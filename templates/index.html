@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static\css\styles.css" />
+    <link
+      rel="shortcut icon"
+      href="static\images\favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Beam</title>
+  </head>
+
+  <body>
+    <nav>
+      <button
+        class="tablink"
+        onclick="openPage('home', this, '#101820FF')"
+        id="home-tablink"
+      >
+        Home
+      </button>
+      <button
+        class="tablink"
+        onclick="openPage('news', this, '#FEE715FF')"
+        id="news-tablink"
+      >
+        News
+      </button>
+    </nav>
+
+    <div id="home" class="tabcontent">
+      <div class="subhead">
+        <p>
+          Displays which website an article is from, its headline, and a snippet
+          of its content.
+        </p>
+      </div>
+      <div class="btn-div">
+        <button
+          class="button"
+          id="get-article-button"
+          onClick="window.location.reload();"
+        >
+          Get Article
+        </button>
+      </div>
+
+      <div class="user-news-dashboard">
+        <div id="results">
+          <h1>{{ article.source }}</h1>
+          <h2>
+            <li>
+              <a href="{{ article.link }}" target="_blank"
+                >{{ article.title }}</a
+              >
+            </li>
+          </h2>
+          <p>{{ article.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="news" class="tabcontent">
+      <div class="subhead">
+        <p>Pay a visit to some of these science oriented news websites.</p>
+      </div>
+
+      <div class="news-container">
+        <!-- Card 1 to 4 -->
+        <a href="https://www.acm.org/" target="_blank">
+          <div class="news-card">
+            <h3>Acm</h3>
+          </div>
+        </a>
+
+        <a href="https://www.acsh.org/" target="_blank">
+          <div class="news-card">
+            <h3>Acsh</h3>
+          </div>
+        </a>
+
+        <a href="https://arstechnica.com/" target="_blank">
+          <div class="news-card">
+            <h3>Arstechnica</h3>
+          </div>
+        </a>
+
+        <a href="https://www.atlasobscura.com/" target="_blank">
+          <div class="news-card">
+            <h3>Atlasobscura</h3>
+          </div>
+        </a>
+
+        <!-- Card 1 to 4 Ends -->
+
+        <!-- Card 5 to 8 -->
+
+        <a
+          href="https://www.bbc.com/news/science_and_environment"
+          target="_blank"
+        >
+          <div class="news-card">
+            <h3>BBC<br />Science</h3>
+          </div>
+        </a>
+
+        <a href="https://www.chemistryworld.com/" target="_blank">
+          <div class="news-card">
+            <h3>Chemistry<br />World</h3>
+          </div>
+        </a>
+
+        <a
+          href="https://www.economist.com/science-and-technology"
+          target="_blank"
+        >
+          <div class="news-card">
+            <h3>Economist</h3>
+          </div>
+        </a>
+
+        <a href="https://futurism.com/" target="_blank">
+          <div class="news-card">
+            <h3>Futurism</h3>
+          </div>
+        </a>
+
+        <!-- Card 5 to 8 Ends -->
+
+        <!-- Card 9 to 12 -->
+
+        <a href="https://www.theguardian.com/science" target="_blank">
+          <div class="news-card">
+            <h3>The Guardian</h3>
+          </div>
+        </a>
+
+        <a href="https://www.livescience.com/" target="_blank">
+          <div class="news-card">
+            <h3>Live<br />Science</h3>
+          </div>
+        </a>
+
+        <a href="https://www.nationalgeographic.com/science" target="_blank">
+          <div class="news-card">
+            <h3>National<br />Geographic</h3>
+          </div>
+        </a>
+
+        <a href="https://www.nature.com/" target="_blank">
+          <div class="news-card">
+            <h3>Nature</h3>
+          </div>
+        </a>
+
+        <!-- Card 9 to 12 Ends -->
+
+        <!-- Card 13 to 16 -->
+
+        <a href="https://www.newscientist.com/" target="_blank">
+          <div class="news-card">
+            <h3>Newscientist</h3>
+          </div>
+        </a>
+
+        <a href="https://www.npr.org/sections/science/" target="_blank">
+          <div class="news-card">
+            <h3>Npr</h3>
+          </div>
+        </a>
+
+        <a href="https://psmag.com/" target="_blank">
+          <div class="news-card">
+            <h3>Psmag</h3>
+          </div>
+        </a>
+
+        <a href="https://www.quantamagazine.org/" target="_blank">
+          <div class="news-card">
+            <h3>Quanta<br />Magazine</h3>
+          </div>
+        </a>
+
+        <!-- Card 13 to 16 Ends -->
+
+        <!-- Card 17 to 20 -->
+
+        <a href="https://www.realclearscience.com/" target="_blank">
+          <div class="news-card">
+            <h3>Real<br />Clear<br />Science</h3>
+          </div>
+        </a>
+
+        <a
+          href="https://www.smithsonianmag.com/category/science-nature/"
+          target="_blank"
+        >
+          <div class="news-card">
+            <h3>Smithsonian<br />Mag</h3>
+          </div>
+        </a>
+
+        <a href="https://www.science.org/" target="_blank">
+          <div class="news-card">
+            <h3>Science</h3>
+          </div>
+        </a>
+
+        <a href="https://www.scientificamerican.com/" target="_blank">
+          <div class="news-card">
+            <h3>Scientific<br />American</h3>
+          </div>
+        </a>
+
+        <!-- Card 17 to 20 Ends -->
+
+        <!-- Card 21 to 24 -->
+
+        <a href="https://www.space.com/" target="_blank">
+          <div class="news-card">
+            <h3>Space</h3>
+          </div>
+        </a>
+
+        <a href="https://www.theverge.com/science" target="_blank">
+          <div class="news-card">
+            <h3>The Verge</h3>
+          </div>
+        </a>
+
+        <a href="https://www.vox.com/science-and-health" target="_blank">
+          <div class="news-card">
+            <h3>Vox</h3>
+          </div>
+        </a>
+
+        <a href="https://www.wired.com/category/science/" target="_blank">
+          <div class="news-card">
+            <h3>Wired</h3>
+          </div>
+        </a>
+
+        <!-- Card 21 to 24 Ends -->
+      </div>
+    </div>
+  </body>
+  <script src="static\js\app.js"></script>
+</html>
